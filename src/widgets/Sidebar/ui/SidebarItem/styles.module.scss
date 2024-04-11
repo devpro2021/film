@@ -1,0 +1,17 @@
+.SidebarItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  height: 42px;
+  column-gap: 16px;
+
+  &__title{
+    font-size: 18px;
+  }
+}
+
+.active{
+  color: var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+  transition: all 0.3s;
+}

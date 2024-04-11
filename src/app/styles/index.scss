@@ -1,6 +1,6 @@
-@import url('./reset.scss');
-@import url('./global.scss');
-@import url('./variables.scss');
+@import './reset';
+@import './global';
+@import './variables';
 
 body{
   color: var(--text-color)

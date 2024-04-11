@@ -1,6 +1,9 @@
-import styles from './styles.module.scss'
-export const Main = () => {
-    return (
-        <div className={styles.Main}>Main</div>
-    );
-};
+import { ReactNode } from 'react';
+
+import styles from './styles.module.scss';
+
+export function Main({ children }: {children: ReactNode}) {
+  return (
+      <div className={styles.Main}>{children}</div>
+  );
+}

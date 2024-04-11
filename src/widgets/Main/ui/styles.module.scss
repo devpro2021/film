@@ -1,1 +1,7 @@
-.Main { grid-area: Main; }
+.Main {
+  grid-area: Main;
+  background-color: black;
+  display: grid;
+  grid-template: "toolbar" 64px "." 1.7fr / 1fr;
+  gap: 0 0;
+}

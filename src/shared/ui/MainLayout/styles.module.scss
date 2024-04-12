@@ -1,7 +1,6 @@
 .MainLayout {  display: grid;
-  grid-template: "Sidebar Main" 1fr / minmax(16%, 250px) 1fr;
+  grid-template: "Sidebar Main Aside" 1fr / minmax(12%, 250px) 1fr minmax(16%, 350px);
   gap: 0 0;
   grid-auto-flow: row;
   height: 100vh;
 }
-

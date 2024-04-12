@@ -1,0 +1,17 @@
+.Button{
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 800;
+  padding: 16px 47px;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  background: var(--button-bg);
+  cursor: pointer;
+
+  &.primaryButton{
+    background-color: var(--primary-color);
+    color: var(--primary-color-button-text);
+  }
+}

@@ -30,7 +30,8 @@
       "@features/*": ["features/*"],
       "@widgets/*": ["widgets/*"],
       "@shared/*": ["shared/*"]
-    }
+    },
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

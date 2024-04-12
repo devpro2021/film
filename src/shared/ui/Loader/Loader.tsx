@@ -6,9 +6,9 @@ import styles from './Loader.module.scss';
 
 export interface LoaderProps extends BaseProps{
     name: keyof typeof Loaders;
-    // eslint-disable-next-line react/require-default-props
+
     width?: string;
-    // eslint-disable-next-line react/require-default-props
+
     height?: string;
 
 }

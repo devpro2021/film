@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
+    "scss/no-global-function-names": null,
     "selector-class-pattern": null,
     "order/order": [
       "custom-properties",

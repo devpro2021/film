@@ -1,7 +1,9 @@
 @import './reset';
 @import './global';
 @import './variables';
+@import "./functions";
 
 body{
-  color: var(--text-color)
+  color: var(--text-color);
+  font-size: 16px;
 }

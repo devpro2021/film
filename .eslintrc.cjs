@@ -5,12 +5,13 @@ module.exports = {
     root: true,
     env: {browser: true, es2020: true, jest: true},
     extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:react-hooks/recommended',
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
         "plugin:react/jsx-runtime",
         "airbnb",
-        'plugin:import/typescript',
+        "plugin:import/typescript",
+        "plugin:storybook/recommended"
     ],
     settings: {
         "import/parsers": {

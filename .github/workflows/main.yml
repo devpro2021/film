@@ -22,8 +22,8 @@ jobs:
       - name: build
         run: npm run build
       - name: linting TS
-        run: npm run lint
+        run: npm run lint--fix
       - name: linting SCSS
-        run: npm run stylelint
+        run: npm run stylelint--fix
       - name: unit tests
         run: npm run test:unit

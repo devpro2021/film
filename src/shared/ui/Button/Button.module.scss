@@ -1,4 +1,4 @@
-.Button{
+.Button {
   font-size: 18px;
   border: none;
   border-radius: 15px;
@@ -11,35 +11,34 @@
   background: var(--button-bg);
   cursor: pointer;
 
-  &.primaryButton{
+  &.primaryButton {
     background-color: var(--primary-color);
     color: var(--primary-color-button-text);
   }
 
-  &.secondaryButton{
+  &.secondaryButton {
     background: var(--button-bg);
     color: var(--text-color);
   }
 
-  &.rectangle{
+  &.rectangle {
     width: 190px;
   }
 
-  &.square{
+  &.square {
     width: 57px;
     height: 57px;
     padding: 20px;
   }
 
-  &.iconTextButton{
+  &.iconTextButton {
     width: auto;
     gap: 15px;
     padding: 20px 25px;
     align-items: center;
   }
 
-  &.icon{
+  &.icon {
     padding: 0;
   }
 }
-

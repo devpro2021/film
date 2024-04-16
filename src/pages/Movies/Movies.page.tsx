@@ -1,13 +1,10 @@
-import { PageLayout } from '@shared/ui/PageLayout';
+import { PageLayout } from "@shared/ui/PageLayout";
 
 function MoviesPage() {
   return (
-      <PageLayout>
-          <div>
-              MOVIES PAGE
-          </div>
-      </PageLayout>
-
+    <PageLayout>
+      <div>MOVIES PAGE</div>
+    </PageLayout>
   );
 }
 

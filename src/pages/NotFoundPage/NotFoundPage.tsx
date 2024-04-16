@@ -1,10 +1,9 @@
-import { PageLayout } from '@shared/ui/PageLayout';
+import { PageLayout } from "@shared/ui/PageLayout";
 
 const NotFoundPage = () => (
-    <PageLayout>
-        <div>NOT FOUND PAGE</div>
-
-    </PageLayout>
+  <PageLayout>
+    <div>NOT FOUND PAGE</div>
+  </PageLayout>
 );
 
 export default NotFoundPage;

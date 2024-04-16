@@ -3,57 +3,42 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type { Config } from 'jest';
+import type { Config } from "jest";
 
-const SRC_PATH = '<rootDir>/src';
+const SRC_PATH = "<rootDir>/src";
 
 const config: Config = {
-  preset: 'ts-jest',
-  testEnvironment: 'jest-environment-jsdom',
+  preset: "ts-jest",
+  testEnvironment: "jest-environment-jsdom",
   // transform: {
   //   '^.+\\.tsx?$': 'ts-jest',
   // },
-  moduleFileExtensions: [
-    'js',
-    'jsx',
-    'ts',
-    'tsx',
-    'json',
-  ],
-  moduleDirectories: [
-    'node_modules',
-    'src',
-  ],
-  modulePaths: [
-    SRC_PATH,
-  ],
+  moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json"],
+  moduleDirectories: ["node_modules", "src"],
+  modulePaths: [SRC_PATH],
   testMatch: [
     // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
-    '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
+    "<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)",
   ],
-  roots: [
-    SRC_PATH,
-  ],
-  rootDir: '',
+  roots: [SRC_PATH],
+  rootDir: "",
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [
-    '\\\\node_modules\\\\',
-  ],
-  setupFilesAfterEnv: ['./setupTests.ts'],
+  coveragePathIgnorePatterns: ["\\\\node_modules\\\\"],
+  setupFilesAfterEnv: ["./setupTests.ts"],
 
   // A map from regular expressions to module names or to
   // arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '@shared/(.*)': '<rootDir>/src/shared/$1',
-    '@app/(.*)': '<rootDir>/src/app/$1',
-    '@pages/(.*)': '<rootDir>/src/pages/$1',
-    '@entities/(.*)': '<rootDir>/src/entities/$1',
-    '@features/(.*)': '<rootDir>/src/features/$1',
-    '@widgets/(.*)': '<rootDir>/src/widgets/$1',
-    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+    "@shared/(.*)": "<rootDir>/src/shared/$1",
+    "@app/(.*)": "<rootDir>/src/app/$1",
+    "@pages/(.*)": "<rootDir>/src/pages/$1",
+    "@entities/(.*)": "<rootDir>/src/entities/$1",
+    "@features/(.*)": "<rootDir>/src/features/$1",
+    "@widgets/(.*)": "<rootDir>/src/widgets/$1",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
   },
 
   // All imported modules in your tests should be mocked automatically
@@ -228,7 +213,6 @@ const config: Config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-
 };
 
 export default config;

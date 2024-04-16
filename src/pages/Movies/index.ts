@@ -1,3 +1,3 @@
-import MoviesPage from './Movies.page';
+import MoviesPage from "./Movies.page";
 
 export { MoviesPage };

@@ -1,14 +1,13 @@
 name: lint, test, build and deploy
 on:
-    push:
-      branches: [master]
-    pull_request:
-        branches: [master]
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     strategy:
-
       matrix:
         node-version: [17.x]
     steps:
@@ -21,6 +20,10 @@ jobs:
         run: npm install
       - name: build
         run: npm run build
+      - name: prettier
+        run: npm run format.
+      - name: prettier
+        run: npm run format--fix
       - name: linting TS
         run: npm run lint--fix
       - name: linting SCSS

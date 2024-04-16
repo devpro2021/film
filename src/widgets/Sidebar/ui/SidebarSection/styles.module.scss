@@ -1,11 +1,10 @@
-.SidebarSection{
+.SidebarSection {
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  &__title{
+  &__title {
     font-size: 20px;
     font-weight: bold;
   }
-
 }

@@ -11,7 +11,7 @@ module.exports = {
         "plugin:react/jsx-runtime",
         "airbnb",
         "plugin:import/typescript",
-        "plugin:storybook/recommended"
+        "plugin:storybook/recommended",
     ],
     settings: {
         "import/parsers": {

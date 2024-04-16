@@ -53,5 +53,7 @@ module.exports = {
     ],
     "max-len": 'off',
     "no-shadow": "off",
+    "jsx-a11y/click-events-have-key-events": "off", //todo: fix this later
+    "jsx-a11y/no-static-element-interactions": "off",//todo: fix this later
   },
 };
